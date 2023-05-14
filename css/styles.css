@@ -137,6 +137,10 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/Img\ \(9\).jpg");
 }
+.hero-heading {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 .hero-container {
   text-align: center;
@@ -270,71 +274,30 @@ ul {
   color: var(--paragraph-color);
 }
 .team-icon {
+  align-self: center;
   margin: 30px 44px 42px 44px;
   color: #afb1b8;
   display: flex;
-  justify-content: space-between;
+}
+.icon {
+  padding: 12px;
 }
 .team-icon a {
+  display: flex;
+  align-items: center;
   color: inherit;
+}
+.team-icon .icon {
+  width: 44px;
+  height: 44px;
 }
 .team-icon .icon:hover,
 .team-icon .icon:focus {
-  width: 44px;
-  height: 44px;
   color: #ffffff;
   background-color: var(--link-button-color);
   border-radius: 50%;
 }
 
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.buttons-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.buttons-list-item {
-  margin-right: 8px;
-  color: #f5f4fa;
-}
-.buttons-list-item:last-child {
-  margin-right: 0;
-}
-.buttons-list .button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: 0;
-  padding: 6px 22px;
-}
-.buttons-list .button:hover,
-.buttons-list .button:focus {
-  color: var(--link-button-color);
-}
-.buttons-list .button:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -20px;
-  margin-bottom: -20px;
-}
-.cards-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.cards-item {
-  border: 1px solid #eeeeee;
-}
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -361,32 +324,15 @@ ul {
 .customers-icon {
   color: #afb1b8;
 }
-
+.customers-card:hover,
+.customers-card:focus {
+  border-color: #2196f3;
+}
 .customers-icon:hover,
 .customers-icon:focus {
   color: var(--link-button-color);
 }
-.border:hover,
-.border:focus {
-  color: var(--link-button-color);
-}
-.portfolio .article-name {
-  padding-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
-.portfolio .article-type {
-  padding-left: 24px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--paragraph-color);
-}
+
 .global-footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -461,10 +407,13 @@ ul {
   display: flex;
 }
 .socials-media-items {
+  display: flex;
+  width: 44px;
+  height: 44px;
   background: #ffffff1a;
   border-radius: 50%;
   color: #ffffff;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 .socials-media-items a {
   color: inherit;
@@ -473,7 +422,82 @@ ul {
 .socials-media-items:focus {
   color: #ffffff;
   background-color: #2196f3;
-  display: block;
-  border-radius: 50%;
-  padding: 12px;
+}
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons-list-item {
+  margin-right: 8px;
+  color: #f5f4fa;
+}
+.buttons-list-item:last-child {
+  margin-right: 0;
+}
+.buttons-list .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 0;
+  padding: 6px 22px;
+}
+.buttons-list .button:hover,
+.buttons-list .button:focus {
+  color: var(--link-button-color);
+}
+.buttons-list .button:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.cards-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-item {
+  border: 1px solid #eeeeee;
+}
+.cards-item:hover,
+.cards-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-color: #2196f3;
+  cursor: pointer;
+}
+
+.images:hover,
+.images:focus {
+  border-color: var(--link-button-color);
+}
+.portfolio .article-name {
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.portfolio .article-type {
+  padding-left: 24px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
 }
