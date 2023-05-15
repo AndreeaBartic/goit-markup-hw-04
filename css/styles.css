@@ -208,6 +208,7 @@ ul {
 .attributes-icon:hover,
 .attributes-icon:focus {
   color: var(--link-button-color);
+  cursor: pointer;
 }
 
 .section-work-title,
